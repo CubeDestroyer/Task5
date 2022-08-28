@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaires</title>
+    <style>
+      button:active{
+        background-color: lightseagreen;
+      }
+      button:hover{
+          background-color: cornflowerblue;
+
+      }
+      button:visited{
+           background-color: crimson;
+      }
+
+      input:valid{
+                text-underline-color: seagreen;
+
+            }
+      input:invalid{
+          text-underline-color: red;
+      }
+
+      form:hover{ background-color: red}
+
+      form:active{ background-color: white}
+
+      form:active{ background-color: cornflowerblue}
+
+
+    </style>
+</head>
+<body> <center>
+    <form style="background-color: seagreen;width: 500px;border-radius: 13px;" >
+        <label for="form"></label>
+        <progress id="form" value="6" max="12">0%</progress> <br>
+        <label for="form2"></label>
+        <meter id="form2" value="0.6">60%</meter>
+        <h2>1.Enter your email <br></h2>
+        <label>
+            <input type="email" value="abcdefg@gmail.com" style="font-size: 1vw" autocomplete="off">
+        </label>
+
+        <h2>2. What exactly do you fancy about the product?<br></h2>
+        <label>
+            <input type="text" spellcheck="true" value="data" style="font-size: 1vw" required>
+        </label>
+
+        <h2>3. What could we do to improve our product?<br></h2>
+        <label>
+            <input type="text" value="data" style="font-size: 1vw">
+        </label>
+
+        <h2>4. What color do you like?<br></h2>
+        <label>
+            <input type="color">
+        </label>
+
+        <h2>5. When were you born?<br></h2>
+        <label>
+            <input type="date">
+        </label>
+
+        <h2>6. What time is it now?<br></h2>
+        <label>
+            <input type="time">
+        </label>
+
+        <h2>7. What number is your favourite?<br></h2>
+
+        <label>
+            <input type="number" required>
+        </label>
+
+        <h2>7. Select a range<br></h2>
+        <label>
+            <input type="range">
+        </label>
+
+        <h2>8. Enter a password<br></h2>
+        <label>
+            <input type="password" pattern=".{6,}">
+        </label>
+
+        <h2>9. Enter an address<br></h2>
+        <label>
+            <input type="url">
+        </label>
+
+        <h2>10. What is your mobile number?<br></h2>
+        <label>
+            <input type="tel" value="+38">
+        </label>
+
+        <h2>11. When would you like to have an appointment?<br></h2>
+        <label>
+            <input type="month" >
+        </label>
+        <label>
+            <input type="datetime-local" >
+        </label>
+        <br>
+        <h2>12. Exact time<br></h2>
+        <label>
+            <input type="time" >
+        </label> <br>
+        <label>
+            <textarea spellcheck="true" maxlength="20"></textarea>
+        </label>
+        <h2>13.Select a browser?</h2>
+        <label for="myBrowser"></label><input list="browsers" id="myBrowser" name="myBrowser" />
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist>
+        <br> <br>
+        <button type="submit" style="border-radius: 5px">Send</button> <br>
+        <button type="reset" style="border-radius: 5px">Clear</button> <br>
+
+    </form>
+</center>
+
+</body>
+</html>
